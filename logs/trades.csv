@@ -1,0 +1,2 @@
+log_timestamp,price,qty,side,strategy,symbol,ts
+2025-11-01T22:38:30.788536,110041.24,0.0018175004207513473,buy,auto,BTC/USDT,1762036710778
