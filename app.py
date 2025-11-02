@@ -2565,9 +2565,10 @@ with tabs[4]:
     
     with col1:
         st.markdown("**📈 Current Signal**")
+        signal_html = f"<p style='color: #888; margin: 0.5rem 0 0 0; font-size: 0.9rem;'>{signal_description}</p>" if signal_description else ""
         st.markdown(f"<div style='padding: 1rem; background-color: #1e1e1e; border-radius: 8px; border-left: 4px solid {sig_color};'>"
                    f"<h3 style='color: {sig_color}; margin: 0;'>{sig_badge}</h3>"
-                   f"{f'<p style=\"color: #888; margin: 0.5rem 0 0 0; font-size: 0.9rem;\">{signal_description}</p>' if signal_description else ''}"
+                   f"{signal_html}"
                    f"</div>", unsafe_allow_html=True)
     
     with col2:
